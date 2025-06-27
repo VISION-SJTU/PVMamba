@@ -1,6 +1,6 @@
 # PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation
 
-#### If you have any questions, please don't hesitate to contact me. (jaffe031@sjtu.edu.cn)
+If you have any questions, please don't hesitate to contact me  (jaffe031@sjtu.edu.cn). 
 
 ## To Do List
 
