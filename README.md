@@ -2,6 +2,8 @@
 
 If you have any questions, please don't hesitate to contact me  (jaffe031@sjtu.edu.cn). 
 
+You can also refer to this github repository: [PVMamba](https://github.com/phiphiphi31/PVMamba).
+
 ## To Do List
 
 - [x] 2025.06 PVMamba is accepted by ICCV.
