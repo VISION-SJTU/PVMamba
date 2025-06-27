@@ -1,12 +1,14 @@
 # PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation
 
+#### If you have any questions, please don't hesitate to contact me. (jaffe031@sjtu.edu.cn)
+
 - [x] 2025.06 PVMamba is accepted by ICCV.
 - [x] 2025.06 Enhance PVMamba by [DCNv4](https://arxiv.org/pdf/2211.05778) operator!
 - [ ] Publish the paper. 
 - [ ] Release the raw code. 
 
 
-## Introduction of QuadMamba
+## Introduction of PVMamba
 
 <p align="center">
 <img src="assets/pvmamba1.png", width="90%">
