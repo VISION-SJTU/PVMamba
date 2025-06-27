@@ -89,9 +89,9 @@ If you find it useful, please consider to cite the paper, thanks!
 ```
 
 @article{xie2025pvmamba,
-    title={PVMamba: Visual State Space Model},
+    title={PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation},
     author={Xie, Fei and Wang, Zhongdao and Zhang, Weijia and Ma, Chao},
-    journal={ICCV},
+    journal={Proceedings of the IEEE/CVF International Conference on Computer Vision},
     year={2025}
 }
 
