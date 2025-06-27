@@ -99,6 +99,6 @@ If you find it useful, please consider to cite the paper, thanks!
 
 ## Acknowledgment
 
-This project is based on [VMamba](https://github.com/MzeroMiko/VMamba/tree/main) (Visual State Space Model, NeurIPS2024), [DCNv4](https://arxiv.org/pdf/2211.05778). Thanks for their great work!
+This project is based on [VMamba](https://github.com/MzeroMiko/VMamba/tree/main), [DCNv4](https://arxiv.org/pdf/2211.05778). Thanks for their great work!
 
 
