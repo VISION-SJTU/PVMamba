@@ -101,6 +101,6 @@ If you find it useful, please consider to cite the paper, thanks!
 
 ## Acknowledgment
 
-This project is based on [VMamba](https://github.com/MzeroMiko/VMamba/tree/main) and [DCNv4](https://arxiv.org/pdf/2211.05778). Thanks for their great work!
+This project is based on [VMamba](https://github.com/MzeroMiko/VMamba/tree/main) [VSSD](https://arxiv.org/pdf/2407.18559), [Mamba2](https://arxiv.org/abs/2405.21060) and [DCNv4](https://arxiv.org/pdf/2211.05778). Thanks for their great work!
 
 
