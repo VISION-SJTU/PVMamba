@@ -2,14 +2,15 @@
 
 If you have any questions, please don't hesitate to contact me  (jaffe031@sjtu.edu.cn). 
 
-You can also refer to this github repository: [PVMamba](https://github.com/phiphiphi31/PVMamba).
+You can also refer to this GitHub repository: [PVMamba](https://github.com/phiphiphi31/PVMamba).
 
 ## To Do List
 
 - [x] 2025.06 PVMamba is accepted by ICCV.
 - [x] 2025.06 Enhance PVMamba by [DCNv4](https://arxiv.org/pdf/2211.05778) operator!
+- [x] 2025.06 Enhance Realease the code for image classification. 
 - [ ] Publish the paper. 
-- [ ] Release the raw code. 
+- [ ] Release the full code. 
 
 
 ## Introduction of PVMamba
