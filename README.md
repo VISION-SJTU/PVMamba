@@ -7,8 +7,8 @@ You can also refer to this GitHub repository: [PVMamba](https://github.com/phiph
 ## To Do List
 
 - [x] 2025.06 PVMamba is accepted by ICCV.
-- [x] 2025.06 Enhance PVMamba by [DCNv4](https://arxiv.org/pdf/2211.05778) operator!
-- [x] 2025.06 Enhance Realease the code for image classification. 
+- [x] 2025.06 Release the code for image classification.
+- [ ] Enhance PVMamba by [DCNv4](https://arxiv.org/pdf/2211.05778) operator!
 - [ ] Publish the paper. 
 - [ ] Release the full code. 
 
