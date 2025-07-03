@@ -67,7 +67,7 @@ pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 
 **Classification**
 
-To train QuadMamba models for classification on ImageNet, use the following commands for different configurations:
+To train PVMamba models for classification on ImageNet, use the following commands for different configurations. Add --mesa if you want to use mesa training. 
 
 ```bash
 python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=8 --master_addr="127.0.0.1" --master_port=29501 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/of/dataset> --output /tmp
@@ -87,7 +87,7 @@ bash ./tools/dist_train.sh </path/to/config> 8
 
 ## Citation
 
-If you find it useful, please consider to cite the paper, thanks!
+If you find this paper useful, please consider citing it. Thanks!
 
 ```
 
