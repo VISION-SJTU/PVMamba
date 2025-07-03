@@ -19,7 +19,7 @@ You can also refer to this GitHub repository: [PVMamba](https://github.com/phiph
 <img src="assets/pvmamba1.png", width="90%">
 </p>
 
-Mamba, an architecture with RNN-like sequence modeling of State Space Model (SSM), has demonstrated promising capabilities in long-range modeling with high efficiency. However, Mamba models struggle with structured 2D visual data using sequential computing, thereby lagging behind their attention-based counterparts. In this paper, we propose a Parallel Vision Mamba (PVMamba), a novel SSM architecture tailored for visual data. PVMamba encompasses two key designs: 1) Based on the sparsity and adjacency of visual signals, we parallelize the sequential computing through three core steps, termed Dynamic State Aggregation (DSA), i.e., parallelization, alignment, and aggregation. DSA generates the hidden state in SSM by a feasible spatial aggregation, thereby overcoming the inherent sequential constraints. 2) Along with maintaining linear computational complexity, we apply a dynamic operator to learn the spatial samplings for each hidden state. To further boost the local modeling capability, we restrict the dynamic operator to the neighboring pixels in shallow layers. We also devise a layer multiplexing technique to stabilize the training and reduce the learning redundancy. PVMamba is a versatile backbone network with dynamic operators for various vision tasks, such as image classification and dense prediction.
+Mamba, an architecture with RNN-like sequence modeling of the State Space Model (SSM), has demonstrated promising capabilities in long-range modeling with high efficiency. However, Mamba models struggle with structured 2D visual data using sequential computing, thereby lagging behind their attention-based counterparts. In this paper, we propose Parallel Vision Mamba (PVMamba), a novel SSM architecture specifically designed for visual data. PVMamba encompasses two key designs: 1) Based on the sparsity and adjacency of visual signals, we parallelize the sequential computing through three core steps, termed Dynamic State Aggregation (DSA), i.e., parallelization, alignment, and aggregation. DSA generates the hidden state in SSM by a feasible spatial aggregation, thereby overcoming the inherent sequential constraints. 2) In addition to maintaining linear computational complexity, we apply a dynamic operator to learn the spatial samplings for each hidden state. To further boost the local modeling capability, we restrict the dynamic operator to the neighboring pixels in shallow layers. We also devise a layer multiplexing technique to stabilize the training and reduce the learning redundancy. PVMamba is a versatile backbone network with dynamic operators for various vision tasks, such as image classification and dense prediction.
 
 ## Getting Started
 
@@ -30,24 +30,24 @@ The installation tips can also be referred to [VMamba](https://github.com/MzeroM
 **Environment Setup:**
 
 VMamba recommends setting up a conda environment and installing dependencies via pip. Use the following commands to set up your environment:
-Also, We recommend using the pytorch>=2.0, cuda>=11.8. But lower version of pytorch and CUDA are also supported.
+Additionally, we recommend using PyTorch >=2.0, CUDA >=11.8. But a lower version of PyTorch and CUDA is also supported.
 
 ***Create and activate a new conda environment***
 
 ```bash
-conda create -n quadmamba
-conda activate quadmamba
+conda create -n pvmamba
+conda activate pvmamba
 ```
 
 ***Install Dependencies***
 
-for SSM library, please do as follows:
+For the SSM library, please do as follows:
 
 ```bash
 pip install -r requirements.txt
 cd kernels/selective_scan && pip install .
 ```
-For DCNv4 library, please do as follows:
+For the DCNv4 library, please do as follows:
 
 ```bash
 cd kernels
