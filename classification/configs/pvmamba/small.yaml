@@ -1,0 +1,21 @@
+MODEL:
+  TYPE: pvmamba
+  NAME: small
+  DROP_PATH_RATE: 0.4
+  PVMAMBA:
+    EMBED_DIM: 64
+    DEPTHS: [3, 4, 21, 5],
+    NUM_HEADS: [2, 4, 8, 16]
+    SSD_EXPANSION: 2
+    SSD_CHUNK_SIZE: 256
+    TOKEN_MIXER_TYPES: ['LoDSA', 'LoDSA', 'SaDSA', 'attention']
+    SPATIAL_FLAG: [[], [], [0, 2, 2, 1, 2, 2, 1, 2, 2, 1,
+                               2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 2],
+                               [0, 2, 2, 1, 2]]
+
+  DDP: 'torch'
+
+TRAIN:
+  EPOCHS: 300
+  WARMUP_EPOCHS: 20
+  MESA: 1.0
