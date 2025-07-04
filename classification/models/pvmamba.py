@@ -235,7 +235,7 @@ class mamba_op(nn.Module):
 
         # A D parameter
         assert A_init_range[0] > 0 and A_init_range[1] >= A_init_range[0]
-        A = torch.empty(self.nheads, dtype=torch.float32, device=device).uniform_(*A_init_range)
+        A = torch.empty(self.d_inner, dtype=torch.float32, device=device).uniform_(*A_init_range)
         A_log = torch.log(A).to(dtype=dtype)
         self.A_log = nn.Parameter(A_log)
         self.A_log._no_weight_decay = True
@@ -267,7 +267,7 @@ class mamba_op(nn.Module):
         dstate = B.shape[2]
         x_in = x.permute(0, 2, 1, 3)  # (B, H, L, D)
         dt = dt.permute(0, 2, 1)  # (B, H, L)
-        dA = dt.unsqueeze(-1) * A.view(1, -1, 1, 1).repeat(batch, 1, seqlen, 1)  # B H L 1
+        dA = dt.unsqueeze(-1) * A.view(1, head, 1, dim).repeat(batch, 1, seqlen, 1)  # B H L 1
 
         B = B.view(batch, 1, seqlen, dstate)  # (B, 1, L, D)
 
@@ -278,7 +278,7 @@ class mamba_op(nn.Module):
             deltaA_x = deltaA_x_pool.flatten(2).view(batch, head, dim, seqlen).permute(0, 1, 3, 2).contiguous()
         else:
             x_in_nh = x_in.permute(0, 1, 3, 2).reshape(batch, -1, seqlen).permute(0, 2, 1)
-            dA_nh = dA.repeat(1,1,1,dim).permute(0, 1, 3, 2).reshape(batch, -1, seqlen).permute(0, 2, 1)
+            dA_nh = dA.permute(0, 1, 3, 2).reshape(batch, -1, seqlen).permute(0, 2, 1)
             deltaA_x_nh, points = self.sa_op(x=x_in_nh, deltaA=dA_nh, H=H, W=W, points=points)
             deltaA_x = deltaA_x_nh.view(batch, -1, seqlen, dim).contiguous()
 
