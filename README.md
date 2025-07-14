@@ -11,7 +11,7 @@ The official implementation of the paper:
 
 ## To Do List
 
-- [x] 2025.06 PVMamba is accepted by ICCV.
+- [x] 2025.06 PVMamba is accepted by ICCV2025.
 - [x] 2025.06 Release the code for image classification.
 - [ ] Enhance PVMamba by [DCNv4](https://arxiv.org/pdf/2211.05778) operator!
 - [ ] Publish the paper. 
