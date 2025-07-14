@@ -1,4 +1,6 @@
-# PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation
+# PVMamba
+
+**PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation**
 
 If you have any questions, please don't hesitate to contact me  (jaffe031@sjtu.edu.cn). 
 
@@ -13,7 +15,7 @@ You can also refer to this GitHub repository: [PVMamba](https://github.com/phiph
 - [ ] Release the full code. 
 
 
-## Introduction of PVMamba
+## 📜 Introduction of PVMamba
 
 <p align="center">
 <img src="assets/pvmamba1.png", width="90%">
@@ -21,7 +23,7 @@ You can also refer to this GitHub repository: [PVMamba](https://github.com/phiph
 
 Mamba, an architecture with RNN-like sequence modeling of the State Space Model (SSM), has demonstrated promising capabilities in long-range modeling with high efficiency. However, Mamba models struggle with structured 2D visual data using sequential computing, thereby lagging behind their attention-based counterparts. In this paper, we propose Parallel Vision Mamba (PVMamba), a novel SSM architecture specifically designed for visual data. PVMamba encompasses two key designs: 1) Based on the sparsity and adjacency of visual signals, we parallelize the sequential computing through three core steps, termed Dynamic State Aggregation (DSA), i.e., parallelization, alignment, and aggregation. DSA generates the hidden state in SSM by a feasible spatial aggregation, thereby overcoming the inherent sequential constraints. 2) In addition to maintaining linear computational complexity, we apply a dynamic operator to learn the spatial samplings for each hidden state. To further boost the local modeling capability, we restrict the dynamic operator to the neighboring pixels in shallow layers. We also devise a layer multiplexing technique to stabilize the training and reduce the learning redundancy. PVMamba is a versatile backbone network with dynamic operators for various vision tasks, such as image classification and dense prediction.
 
-## Getting Started
+## 🕹️ SGetting Started
 
 ### Installation
 
@@ -85,7 +87,7 @@ To train with `mmdetection` or `mmsegmentation`:
 bash ./tools/dist_train.sh </path/to/config> 8
 ```
 
-## Citation
+## 🤗 Citation
 
 If you find this paper useful, please consider citing it. Thanks!
 
@@ -100,7 +102,7 @@ If you find this paper useful, please consider citing it. Thanks!
 
 ```
 
-## Acknowledgment
+## ❤️ Acknowledgment
 
 This project is based on [VMamba](https://github.com/MzeroMiko/VMamba/tree/main), [VSSD](https://arxiv.org/pdf/2407.18559), [Mamba2](https://arxiv.org/abs/2405.21060) and [DCNv4](https://arxiv.org/pdf/2211.05778). Thanks for their great work!
 
