@@ -2,7 +2,7 @@
 
 The official implementation of the paper:
 
-**PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation**
+## PVMamba: Parallelizing Vision Mamba via Dynamic State Aggregation**
 >  Fei Xie, Zhongdao Wang, Weijia Zhang, Chao Ma
 
 > If you have any questions, please don't hesitate to contact me  (jaffe031@sjtu.edu.cn). 
