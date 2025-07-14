@@ -18,7 +18,7 @@ You can also refer to this GitHub repository: [PVMamba](https://github.com/phiph
 - [ ] Release the full code. 
 
 
-## 📜 Introduction of PVMamba
+## 📜 Introduction 
 
 <p align="center">
 <img src="assets/pvmamba1.png", width="90%">
