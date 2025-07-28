@@ -14,9 +14,9 @@ The official implementation of the paper.
 
 - [x] 2025.06 PVMamba is accepted by ICCV2025.
 - [x] 2025.06 Release the code for image classification.
+- [ ] 2025.07 Release the logs/configs for image classification.
 - [ ] Enhance PVMamba by [DCNv4](https://arxiv.org/pdf/2211.05778) operator!
 - [ ] Publish the paper. 
-- [ ] Release the full code. 
 
 
 ## 📜 Introduction 
@@ -31,9 +31,9 @@ Mamba, an architecture with RNN-like sequence modeling of the State Space Model 
 ### **Classification on ImageNet-1K**
 | name | pretrain | resolution |acc@1 | #params | FLOPs | configs/logs/ckpts |
 | :---: | :---: | :---: | :---: | :---: | :---:  | :---: |
-| PVMamba-Tiny | ImageNet-1K | 224x224 | 84.8 | 89M | 16.1G | [BaiduNetDisk](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1) |
-| PVMamba-Small | ImageNet-1K | 224x224 | 84.2 | 40M | 7.4G | [BaiduNetDisk](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1)  |
-| PVMamba-Base | ImageNet-1K | 224x224 | 83.9 | 24M | 4.5G  | [BaiduNetDisk](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1)  |
+| PVMamba-Tiny | ImageNet-1K | 224x224 | 84.8 | 89M | 16.1G | [BaiduNetDisk/password=ajh1](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1) |
+| PVMamba-Small | ImageNet-1K | 224x224 | 84.2 | 40M | 7.4G | [BaiduNetDisk/password=ajh1](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1)  |
+| PVMamba-Base | ImageNet-1K | 224x224 | 83.9 | 24M | 4.5G  | [BaiduNetDisk/password=ajh1](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1)  |
 
 
 ## 🕹️ SGetting Started
