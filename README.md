@@ -27,6 +27,15 @@ The official implementation of the paper.
 
 Mamba, an architecture with RNN-like sequence modeling of the State Space Model (SSM), has demonstrated promising capabilities in long-range modeling with high efficiency. However, Mamba models struggle with structured 2D visual data using sequential computing, thereby lagging behind their attention-based counterparts. In this paper, we propose Parallel Vision Mamba (PVMamba), a novel SSM architecture specifically designed for visual data. PVMamba encompasses two key designs: 1) Based on the sparsity and adjacency of visual signals, we parallelize the sequential computing through three core steps, termed Dynamic State Aggregation (DSA), i.e., parallelization, alignment, and aggregation. DSA generates the hidden state in SSM by a feasible spatial aggregation, thereby overcoming the inherent sequential constraints. 2) In addition to maintaining linear computational complexity, we apply a dynamic operator to learn the spatial samplings for each hidden state. To further boost the local modeling capability, we restrict the dynamic operator to the neighboring pixels in shallow layers. We also devise a layer multiplexing technique to stabilize the training and reduce the learning redundancy. PVMamba is a versatile backbone network with dynamic operators for various vision tasks, such as image classification and dense prediction.
 
+
+### **Classification on ImageNet-1K**
+| name | pretrain | resolution |acc@1 | #params | FLOPs | configs/logs/ckpts |
+| :---: | :---: | :---: | :---: | :---: | :---:  | :---: |
+| PVMamba-Tiny | ImageNet-1K | 224x224 | 84.8 | 89M | 16.1G | [BaiduNetDisk](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1) |
+| PVMamba-Small | ImageNet-1K | 224x224 | 84.2 | 40M | 7.4G | [BaiduNetDisk](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1)  |
+| PVMamba-Base | ImageNet-1K | 224x224 | 83.9 | 24M | 4.5G  | [BaiduNetDisk](https://pan.baidu.com/s/1qAfo6PFsDkodLAYrqZniLg?pwd=ajh1)  |
+
+
 ## 🕹️ SGetting Started
 
 ### Installation
